@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div, a, p {
+    font-family: Arial;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 35px auto 45px;
+    height: 100vh;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 40px 90px 50px 50px;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    color: #5f6368;
+}
+
+.header a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #5f6368;
+}
+
+.header .link {
+    padding-top: 2px;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.account {
+    font-size: 30px !important;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 92px 47px 15px;
+    grid-template-columns: 145px 136px 136px 145px;
+    margin: 8% calc(50% - 281px - 15px * 3);
+    gap: 30px;
+}
+
+.logo {
+    height: 92px;
+    width: 272px;
+    background-size: 272px;
+    background-image: url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.search {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: 1px solid #c0c0c2;
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: auto 80% auto auto;
+    padding-left: 10px;
+}
+
+.search input {
+    height: 45px;
+    width: 97%;
+    font-size: 20px;
+    border: none;
+}
+
+.search .material-symbols-outlined {
+    font-size: 30px;
+    padding-top: 7px;
+    color: #7b7b7b;
+}
+
+.search:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3px #5f6368;
+}
+
+.buttons {
+    grid-row: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto;
+}
+
+.buttons span {
+    text-align: center;
+    color: #636363;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.buttons span:hover {
+    border: 1px solid #dbdde0;
+    cursor: pointer;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto 55% auto auto auto auto;
+    grid-row: 3;
+    background-color: #f2f2f2;
+    gap: 15px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.footer span a {
+    color: #70757a;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.footer span a:hover {
+    text-decoration: underline;
+}
